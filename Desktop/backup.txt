@@ -1,0 +1,21 @@
+Package: jenkins
+Status: install reinstreq half-configured
+Priority: extra
+Section: devel
+Installed-Size: 61988
+Maintainer: Kohsuke Kawaguchi <kk@kohsuke.org>
+Architecture: all
+Version: 2.204.1
+Replaces: hudson
+Depends: daemon, adduser, procps, psmisc, net-tools
+Conflicts: hudson
+Conffiles:
+ /etc/default/jenkins 3f6f8cacd016445f937b1830f2b8aabc
+ /etc/init.d/jenkins f3c5f3710c9d66e30f368d6069036ae6
+ /etc/logrotate.d/jenkins b47162f0b175626cbf0835e713dd0b60
+Description: Jenkins is an open source automation server which enables developers around the world to reliably automate  their development lifecycle processes of all kinds, including build, document, test, package, stage, deployment, static analysis and many more.
+ .
+ Jenkins is being widely used in areas of Continuos Integration, Continuous Delivery, DevOps, and other areas. And it is not only about software, the same automation techniques can be applied in other areas like Hardware Engineering, Embedded Systems, BioTech, etc.
+ .
+ For information see https://jenkins.io
+Homepage: http://jenkins.io/
